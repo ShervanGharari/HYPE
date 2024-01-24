@@ -15,8 +15,9 @@ We can then install packages from PyPI or from GitHub repositories:
 
 ```
 python -m pip install numpy pandas xarray networkx geopandas matplotlib shapely
-python -m pip install git+https://github.com/kasra-keshavarz/hydrant
-python -m pip install git+https://github.com/ShervanGharari/EASYMORE.git@develop_2.0.0
+pip uninstall easymore; pip install git+https://github.com/ShervanGharari/EASYMORE.git@utility
+pip uninstall hypeflow; pip uninstall model_builder; pip install git+https://github.com/ShervanGharari/hypeflow.git@develop
+pip uninstall hydrant; pip install git+https://github.com/ShervanGharari/hydrant.git
 ```
 
 In order to be able to run the examples with jupyter notebook, we need to install jupyter and ipykernel and link it to the virtual environment.
